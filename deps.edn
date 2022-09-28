@@ -1,0 +1,5 @@
+{:deps    {org.clojure/tools.logging {:mvn/version "1.2.4"}}
+ :aliases {:dev {:extra-deps {org.slf4j/slf4j-simple {:mvn/version "1.7.35"}}}
+           :prd {:extra-paths ["prd/resources"]
+                 :extra-deps {net.logstash.logback/logstash-logback-encoder {:mvn/version "7.2"}
+                              ch.qos.logback/logback-classic {:mvn/version "1.2.3"}}}}}
